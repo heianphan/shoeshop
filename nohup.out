@@ -1,0 +1,54 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2026-01-02 13:24:09.269  INFO 26167 --- [           main] c.e.demo.SpringShoppingCart2Application  : Starting SpringShoppingCart2Application v0.0.1-SNAPSHOT on lab-server with PID 26167 (/projects/shoeshop/target/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar started by shoeshop in /projects/shoeshop)
+2026-01-02 13:24:09.272  INFO 26167 --- [           main] c.e.demo.SpringShoppingCart2Application  : No active profile set, falling back to default profiles: default
+2026-01-02 13:24:10.291  INFO 26167 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-02 13:24:10.324  INFO 26167 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
+2026-01-02 13:24:11.462  INFO 26167 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-01-02 13:24:11.476  INFO 26167 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-02 13:24:11.476  INFO 26167 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2026-01-02 13:24:11.648  INFO 26167 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-02 13:24:11.648  INFO 26167 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2291 ms
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+## getDataSource: org.springframework.jdbc.datasource.DriverManagerDataSource@5f7b97da
+2026-01-02 13:24:12.152  INFO 26167 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2026-01-02 13:24:14.866  INFO 26167 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2026-01-02 13:24:15.223  INFO 26167 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2026-01-02 13:24:16.593  INFO 26167 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+## getSessionFactory: org.hibernate.internal.SessionFactoryImpl@d74bac4
+2026-01-02 13:24:17.116  INFO 26167 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2026-01-02 13:24:17.237  INFO 26167 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-01-02 13:24:17.566  INFO 26167 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6920614, org.springframework.security.web.context.SecurityContextPersistenceFilter@277bf091, org.springframework.security.web.header.HeaderWriterFilter@5d21202d, org.springframework.security.web.authentication.logout.LogoutFilter@48d293ee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@262816a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a094db2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b2e46af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6069dd38, org.springframework.security.web.session.SessionManagementFilter@6eb17ec8, org.springframework.security.web.access.ExceptionTranslationFilter@767191b1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31ee2fdb]
+2026-01-02 13:24:17.676  INFO 26167 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-01-02 13:24:17.677  INFO 26167 --- [           main] c.e.demo.SpringShoppingCart2Application  : Started SpringShoppingCart2Application in 8.974 seconds (JVM running for 9.775)
+2026-01-02 13:24:35.571  INFO 26167 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-02 13:24:35.574  INFO 26167 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-02 13:24:35.591  INFO 26167 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+Hibernate: select account0_.User_Name as user_nam1_0_0_, account0_.Active as active2_0_0_, account0_.Encryted_Password as encryted3_0_0_, account0_.User_Role as user_rol4_0_0_ from Accounts account0_ where account0_.User_Name=?
+Account= [manager1,$2a$10$PrI5Gk9L.tSZiW9FXhTS8O8Mz9E97k2FZbFvGFFaSsiTUIl.TCrFu,ROLE_MANAGER]
+null
+manager1
+true
+Target=org.springframework.security.core.userdetails.User@758e624: Username: manager1; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_MANAGER
+Hibernate: select product0_.Code as col_0_0_, product0_.Name as col_1_0_, product0_.Price as col_2_0_ from Products product0_ order by product0_.Create_Date desc
+Target=com.example.demo.pagination.PaginationResult@2164f1ec
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Target=com.example.demo.model.CartInfo@5361eb4d
+Target=com.example.demo.model.CartInfo@5361eb4d
+Hibernate: select product0_.Code as code1_3_, product0_.Create_Date as create_d2_3_, product0_.Image as image3_3_, product0_.Name as name4_3_, product0_.Price as price5_3_ from Products product0_ where product0_.Code=?
+Target=com.example.demo.form.CustomerForm@549ded07
